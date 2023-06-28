@@ -1,0 +1,31 @@
+last_semester_gradebook = [["politics", 80], ["latin", 96], ["dance", 97], ["architecture", 65]]
+
+# Your code below: 
+#Create a list os subjects
+subjects = ["physics","calculus","poetry","history"]
+#create a list of grades
+grades = [98, 97, 85, 88]
+#manually (without any methods) create a 2D list
+gradebook = [["physics",98 ],["calculus",97], ["poetry", 85],["history",88]]
+print(gradebook)
+#add the grade in Computer science 
+gradebook.append(['computer science',100])
+print(gradebook)
+#adding new grade in art
+gradebook.append(['visual arts', 93])
+print(gradebook)
+#correct visual art grade, add 5 more points
+gradebook[4][1]=gradebook[4][1]+5
+print(gradebook)
+#change grade 85 in poetry into pass
+#my solution
+#gradebook[2][1] = 'pass'
+#print(gradebook)
+
+#correct solution (I don't agree it was efficient though)
+gradebook[2].remove(85)
+gradebook[2].append('pass')
+print(gradebook)
+
+full_gradebook = last_semester_gradebook + gradebook
+print(f'This is a list of grades for two semesters: \n',full_gradebook)
