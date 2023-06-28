@@ -1,0 +1,41 @@
+# Your code below: 
+#names of customers
+first_names = ['Ainsley', 'Ben', 'Chani', 'Depak']
+#preferred sizes of customers
+preferred_size = ["Small", "Large", "Medium"]
+#add size for "Depak"
+preferred_size.append("Medium")
+#log the prefered sizes list
+print(f'Preferred sizes:', preferred_size)
+print('____________________________________________')
+#combine three attributes for each customer
+customer1 =[first_names[0],preferred_size[0], True]
+customer2 =[first_names[1],preferred_size[1], False]
+customer3 = [first_names[2],preferred_size[2], True]
+customer4 = [first_names[3],preferred_size[3], False]
+
+#print customers
+print(f'Customer 1:name, size, Express delivery: \n', customer1)
+print(f'Customer 2:name, size, Express delivery: \n', customer2)
+print(f'Customer 3:name, size, Express delivery: \n', customer3)
+print(f'Customer 4:name, size, Express delivery: \n', customer4)
+print('____________________________________________')
+#combine all customers in one list
+customer_data = [customer1, customer2, customer3, customer4]
+print(f'Combined customers lists: \n', customer_data)
+print('____________________________________________')
+#change attirubute of one customer (Chani, True into False)
+customer_data[2][2] = False
+print(f'Customers list after updating Chani:\n', customer_data)
+#remove False for customer 
+#this is how I solved
+#customer_data[1][2]= []
+#print(customer_data)
+print('____________________________________________')
+#this was the correct solution
+customer_data[1].remove(False)
+print(f'Customers list after updating Ben: \n', customer_data)
+print('____________________________________________')
+new_customers = [["Amit", "Large", True], ["Karim", "X-Large", False]]
+customer_data_final = customer_data + new_customers
+print (f'Customers list with new customers added: : \n', customer_data_final)
