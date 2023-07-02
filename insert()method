@@ -1,0 +1,24 @@
+#make an list of food for front_window_display
+front_display_list = ["Mango", "Filet Mignon", "Chocolate Milk"]
+print(front_display_list)
+#['Mango', 'Filet Mignon', 'Chocolate Milk']'''
+
+# Your code below: 
+#insert "Pineapple" in the first position
+front_display_list.insert(0, 'Pineapple')
+print(front_display_list)
+#['Pineapple', 'Mango', 'Filet Mignon', 'Chocolate Milk']
+
+#insert "Pears" in the last position
+front_display_list.insert(len(front_display_list)-1, 'Pears')
+print(front_display_list)
+#['Pineapple', 'Mango', 'Filet Mignon', 'Pears', 'Chocolate Milk']
+
+front_display_list.insert(1, 'Strawberries')
+print(front_display_list)
+#['Pineapple', 'Strawberries', 'Mango', 'Filet Mignon', 'Pears', 'Chocolate Milk']
+
+
+front_display_list[-1] = 'Sweet Cherries'
+print(front_display_list)
+#['Pineapple', 'Strawberries', 'Mango', 'Filet Mignon', 'Pears', 'Sweet Cherries']
