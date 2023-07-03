@@ -1,0 +1,46 @@
+import random
+#get choice from the user
+def get_user_choice():
+    valid_choices = ["rock", "scissors", "paper"]
+    while True:
+        user_choice = input("Select and enter you choice from: rock, scissors, paper:").lower()
+        if user_choice in valid_choices:
+            return user_choice
+        else:
+            print("Invalid choice. Please try again.")
+#get choice from computer
+def get_computer_choice():
+    valid_choices = ["rock", "scissors", "paper"]
+    return random.choice(valid_choices)
+
+
+#compare the choices of computer and the user
+def determine_winner(user_choice, computer_choice):
+   if (user_choice == computer_choice):
+       print ("It's a draw! User and computer are winners!")
+   elif (user_choice == 'rock' and computer_choice == 'paper'):
+       print('Computer wins,user loses as paper covers the rock!')
+   elif (user_choice == 'rock' and computer_choice == 'scissors'):
+       print ('User wins, as  rock breaks the scissors!')
+   elif (user_choice == 'paper' and computer_choice == 'rock'):
+       print("User wins as paper covers the rock!")
+   elif (user_choice == 'paper'and computer_choice == 'scissors'):
+       print ('Computer wins as scissors cut the paper')
+   elif (user_choice == 'scissors' and computer_choice == 'rock'):
+       print ('Computer wins as rock breaks the scissors')
+   elif (user_choice == 'scissors' and computer_choice == 'paper'):
+       print ('User wins as scissors cut the paper')
+
+def game1():
+    print('Welcome to the game "Rock, scissors, paper"')
+def game2(user_choice,computer_choice):
+    print(f'The user selected {user_choice}')
+    print(f'The computer selected {computer_choice}')
+    determine_winner(user_choice,computer_choice)
+#call the welcome screen
+game1()
+# assign the choices to variables for using them later
+user_choice = get_user_choice()
+computer_choice = get_computer_choice()
+#call the algorithm of the game
+game2(user_choice,computer_choice)
