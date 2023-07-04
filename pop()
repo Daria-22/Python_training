@@ -1,0 +1,15 @@
+data_science_topics = ["Machine Learning", "SQL", "Pandas", "Algorithms", "Statistics", "Python 3"]
+print(data_science_topics)
+
+# Your code below: 
+#remove the last element. Pop() always removed the last element in the list
+data_science_topics.pop()
+print(data_science_topics)
+
+#deleted element can be saved:removed_element = data_science_topics.pop()
+print (removed_element)
+
+#remove theelement with indication of an index
+data_science_topics.pop(3)
+print(data_science_topics)
+
