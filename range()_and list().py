@@ -19,3 +19,7 @@ print(list(zero_to_seven))
 my_range2 = range(2, 9, 2)
 print(list(my_range2))
 
+#range starts at 0, finishes before 40, skips in 5
+range_diff_five = range(0, 40, 5)
+print(range_diff_five)
+print(list(range_diff_five))
