@@ -15,3 +15,7 @@ zero_to_seven = range(8)
 print(zero_to_seven)
 print(list(zero_to_seven))
 
+#range with defines start (first 2), finish (9) and skip(second 2)
+my_range2 = range(2, 9, 2)
+print(list(my_range2))
+
