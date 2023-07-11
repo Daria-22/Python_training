@@ -11,6 +11,8 @@ Class Database:
     
     def set_database_name():
         
+        #see https://apps.prometheus.org.ua/learning/course/course-v1:GlobalLogic+QAAUTO101+2023_T1/block-v1:GlobalLogic+QAAUTO101+2023_T1+type@sequential+block@d51705863f9e483cae576b9316e5309f/block-v1:GlobalLogic+QAAUTO101+2023_T1+type@vertical+block@385ff3572a4949c6bd2fed64655ba57e
+        
     
     
     
