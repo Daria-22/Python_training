@@ -1,0 +1,9 @@
+# Udemi
+f = open("Dasha.txt") #when in directory, otherwise - full path
+#print(f.read ())
+
+print(f.read(200)) # for printing the number of character - read until character 200, along with spaces
+
+print(f.readline()) # for printing lines
+print(f.readline())
+print(f.readline())
