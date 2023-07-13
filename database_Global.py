@@ -11,7 +11,7 @@ class Database:
     def get_connected_to_database(self):
         return self._connected_to_database
     def set_connected_to_database(self, connection_state):
-        print("Неможливо змінити значення connected_to_database за допомогою присвоєння. \n Використайте метод connect_to_database")
+        print("Неможливо змінити значення connected_to_database за допомогою присвоєння. Використайте метод connect_to_database")
     
     def get_database_name(self):
         return self.__database_name
