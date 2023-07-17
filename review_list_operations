@@ -1,0 +1,35 @@
+inventory = ["twin bed", "twin bed", "headboard", "queen bed", "king bed", "dresser", "dresser", "table", "table", "nightstand", "nightstand", "king bed", "king bed", "twin bed", "twin bed", "sheets", "sheets", "pillow", "pillow"]
+
+inventory_len = len(inventory)
+print('printing number of items in the inventory')
+print (inventory_len)
+print('_________________________')
+first = inventory[0]
+last = inventory[len(inventory) - 1]
+print('Printing first and last elements in the inventory')
+print(first, last)
+print('_________________________')
+inventory_2_6 = inventory[2:6]
+print("Printing from 2 to 5 elements")
+print(inventory_2_6)
+print('_________________________')
+first_3 = inventory [0:3]
+print('Printing first three items in the inventory')
+print(first_3)
+print('_________________________')
+twin_beds = inventory.count('twin bed')
+print("Printing number of twin beds in the list")
+print(twin_beds)
+print('_________________________')
+removed_item = inventory.pop(4)
+print ("Printing the removed item")
+print(removed_item)
+print('_________________________')
+inventory.insert(10, "19th Century Bed Frame")
+print('Printing inventory after insertion of the new item')
+print(inventory)
+print('_________________________')
+inventory.sort()
+print('Printing inventory after sorting with .sort()')
+print(inventory)
+
