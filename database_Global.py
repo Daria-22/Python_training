@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Class Database:
     def __init__(database_name):
         _connected_to_database= False
@@ -63,56 +64,42 @@ new_database_name  = input("Введіть нове ім'я бази даних 
 class Database:
    # your code goes here
 
-db = Database(input_database_name)
-print(db._connected_to_database)
-print(db.get_connected_to_database())
-db.set_connected_to_database(True)
-
-db.connect_to_database()
-print(db._connected_to_database)
-print(db.get_connected_to_database())
-
-print(db.get_database_name())
-db.set_database_name(new_database_name)
-print(db.get_database_name())
-
-Code Editor
-1
+=======
 input_database_name = input("Введіть ім'я бази даних ")
-2
 new_database_name  = input("Введіть нове ім'я бази даних ")
-3
-​
-4
+
 class Database:
-5
-   # your code goes here
-6
-​
-7
-​
-8
+
+    def __init__(self, database_name):
+        self.__database_name = database_name
+       
+    _connected_to_database= False
+ 
+    def get_connected_to_database(self):
+        return self._connected_to_database
+    def set_connected_to_database(self, connection_state):
+        print("Неможливо змінити значення connected_to_database за допомогою присвоєння. Використайте метод connect_to_database")
+    
+    def get_database_name(self):
+        return self.__database_name
+    
+    def set_database_name(self, value):
+        self.__database_name = value.upper()   
+    def connect_to_database(self):
+        self._connected_to_database = True
+        print("Під'єднано до бази даних")
+#Під'єднатися до бази даних (connect_to_database), задача якого змінити значення атрибуту об'єкта _connected_to_database на True
+# та вивести на екран повідомлення "Під'єднано до бази даних"
+>>>>>>> version2
 db = Database(input_database_name)
-9
 print(db._connected_to_database)
-10
 print(db.get_connected_to_database())
-11
 db.set_connected_to_database(True)
-12
-​
-13
+
 db.connect_to_database()
-14
 print(db._connected_to_database)
-15
 print(db.get_connected_to_database())
-16
-​
-17
+
 print(db.get_database_name())
-18
 db.set_database_name(new_database_name)
-19
 print(db.get_database_name())
-20'''
