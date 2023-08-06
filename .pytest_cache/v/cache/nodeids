@@ -1,0 +1,8 @@
+[
+  "test_game.py::test_correct_input",
+  "test_game.py::test_determine_winner",
+  "test_game.py::test_get_computer_choice",
+  "test_game.py::test_get_user_choice",
+  "test_game.py::test_input_is_correct",
+  "test_game.py::test_input_is_string"
+]

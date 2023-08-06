@@ -18,4 +18,3 @@ After first change
 [['Kenny', 'American', 9], ['Tanya', 'Ukrainian', 9], ['Madison', 'Indian', 8]]
 After second change
 [['Ken', 'American', 9], ['Tanya', 'Ukrainian', 9], ['Madison', 'Indian', 8]]'''
-"

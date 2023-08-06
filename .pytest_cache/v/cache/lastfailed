@@ -1,0 +1,4 @@
+{
+  "test_game.py::test_get_user_choice": true,
+  "test_game.py::test_correct_input": true
+}
