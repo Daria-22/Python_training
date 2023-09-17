@@ -1,0 +1,9 @@
+#Write your function here
+def add_greetings(names):
+    new_list = []
+    for name in names:
+      greeting = "Hello, " + name
+      new_list.append(greeting)
+    return new_list
+#Uncomment the line below when your function is done
+print(add_greetings(["Owen", "Max", "Sophie"]))
