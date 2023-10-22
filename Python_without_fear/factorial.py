@@ -6,7 +6,7 @@ def main():
         while i <= n:
             prod *= i
             i +=1
-        print("Factorial of your number equals " + str(prod))
+        print("Factorial of your number equals " + str(prod)+".")
         n = int(input("Enter 0 to quit"))
     print("Bye for now!")
         
