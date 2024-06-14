@@ -1,0 +1,25 @@
+def rotate_left(the_list):
+  # TODO: Remove the first element, and put it at the end of the list.
+  first_element = the_list.pop(0)
+  #print(first_element)
+  length_the_list = len(the_list)
+  #print(length_the_list)
+  the_list.insert(length_the_list+1,first_element)
+  return the_list
+
+rotate_left([1,2,3,4])
+
+def rotate_right(the_list):
+  # TODO: Remove the last element, and put it at the front of the list.
+   last_element= the_list.pop()
+   the_list.insert(0, last_element)
+   return the_list
+
+#testing 
+assert rotate_left(["a"]) == ["a"]
+assert rotate_left(["a", "b"]) == ["b", "a"]
+assert rotate_left(["a", "b", "c"]) == ["b", "c", "a"]
+
+assert rotate_right(["a"]) == ["a"]
+assert rotate_right(["a", "b"]) == ["b", "a"]
+assert rotate_right(["a", "b", "c"]) == ["c", "a", "b"]
