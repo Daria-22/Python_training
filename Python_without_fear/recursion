@@ -11,3 +11,6 @@ def sum_positive_numbers(n):
 
 print(sum_positive_numbers(3)) # Should be 6
 print(sum_positive_numbers(5)) # Should be 15
+
+#conclusion - it is hard to understand. but the idea is to break the problem into smaller problems. The code sums the results when it reaches the base case
+#there is no need for me to sum it up
