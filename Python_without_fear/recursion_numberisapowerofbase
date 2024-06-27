@@ -1,0 +1,19 @@
+def is_power_of(number, base):
+    # Base case: when number is smaller than base.
+    if number < base:
+        # If number is equal to 1, it's a power (base**0).
+        if number == 1:
+            return True
+        else:
+            return False
+    
+    # Recursive case: keep dividing number by base.
+    if number % base != 0:
+        return False
+    
+    return is_power_of(number/base, base)
+
+# Examples
+print(is_power_of(8, 2))  # Output should be True (2^3 = 8)
+print(is_power_of(27, 3))  # Output should be True (3^3 = 27)
+print(is_power_of(10, 2))  # Output should be False (10 is not a power of 2)
