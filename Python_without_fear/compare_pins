@@ -1,0 +1,26 @@
+#declare counter of attempts
+failed_attempts = 0
+
+#create a function which takes two parameters - corret pi and provided pin
+  def check_pin(correct_pin, provided_pin):
+
+# the failed attempt - outside valiable, should be inidcated as global for it to work  
+    global failed_attempts
+#set condition: not correct pin - add wrong attemtps and return false, correct attempt - do no add anything and return True
+  if correct_pin != provided_pin:
+     failed_attempts +=1
+     return False
+   else:
+     return True
+
+# tests
+check_1 = check_pin("1234", "5678")
+check_2 = check_pin("9000", "9000")
+check_3 = check_pin("867", "5309")
+
+[check_1, check_2, check_3, failed_attempts]
+
+#Result: 
+#GOAL:[False, True, False, 2]
+#YOURS:[False, True, False, 2]
+  
