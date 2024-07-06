@@ -1,0 +1,5 @@
+winners = ['Daria', 'Zoe', 'Rayne', 'Elize']
+
+for index, person in enumerate(winners):
+    print("{} - {}".format(index +1, person))
+    print(index)
