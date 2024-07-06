@@ -1,0 +1,10 @@
+# two ways of doing the same thing
+languages = ['Python', 'C#', 'Ruby', 'JavaScript']
+newList = []
+for language in languages:
+    newList.append(len(language))
+print(newList)
+
+languages = ['Python', 'C#', 'Ruby', 'JavaScript']
+lengthOfLanguages = [len(language) for language in languages]
+print(lengthOfLanguages)
