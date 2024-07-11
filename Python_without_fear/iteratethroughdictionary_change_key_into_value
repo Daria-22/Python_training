@@ -1,11 +1,15 @@
+#define the funtion, which takes a dictionary
 def groups_per_user(group_dictionary):
+	# make an empty dictionary where info will be added
 	user_groups = {}
-	# Go through group_dictionary
+	# Go through group_dictionary, through key and value
 	for group, users in group_dictionary.items():
-		# Now go through the users in the group
+		# Now go through the users in the group, iteration through values
 		for user in users:
+			# make condition, if the value was not added to the created dictionary, then this value becomes a key and the value becomes a list
 			if user not in user_groups:
 				user_groups[user] = [group]
+			#if the value was already added a a key, then just add a value to it
 			else:
 				user_groups[user].append(group)
 
