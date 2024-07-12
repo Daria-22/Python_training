@@ -1,0 +1,21 @@
+
+def count_order_items(order):
+  ordered_items = 0
+  for value in order.values():
+    ordered_items += value
+  return ordered_items
+
+[
+  count_order_items({
+    "dumplings": 4,
+    "rice": 3,
+  }),
+  count_order_items({
+    "ice cream cone": 2,
+  }),
+]
+
+GOAL:
+[7, 2]
+YOURS:
+[7, 2]
