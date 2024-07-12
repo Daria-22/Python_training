@@ -1,0 +1,24 @@
+numbers = [2, 5, 6, 8, 3, 1, 8]
+even = []
+odd = []
+
+while len(numbers) > 0:
+  if numbers[0] % 2 == 0:
+    even.append(numbers[0])
+  else:
+    odd.append(numbers[0])
+  numbers.pop(0)
+
+[numbers, even, odd]
+
+#  GOAL:
+#[
+# [],
+#  [2, 6, 8, 8],
+#  [5, 3, 1],
+#]
+#YOURS:
+
+#[[], [2, 6, 8, 8], [5, 3, 1]]
+
+#I created code with just for loop and it did the job perfectly, but the task wanted while, pop() so I made this later
