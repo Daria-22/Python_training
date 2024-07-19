@@ -1,0 +1,23 @@
+numbers = [2, 5, 6, 8, 3, 1, 8]
+even = []
+odd = []
+
+#got error list not callable as I referred to number with () - numbers(0) instead of numbers.[0]
+
+while len(numbers) > 0:
+    if numbers[0] % 2 == 0:
+      even.append(numbers[0])
+    else:
+      odd.append(numbers[0])
+    numbers.pop(0)
+  
+[numbers, even, odd]
+
+GOAL:
+[
+  [],
+  [2, 6, 8, 8],
+  [5, 3, 1],
+]
+YOURS:
+[[], [2, 6, 8, 8], [5, 3, 1]]
