@@ -1,0 +1,11 @@
+import arrow
+date = arrow.get("2024-07-22", 'YYYY-MM-DD')
+date.shift(weeks=+6).format("MMM DD YYYY")
+#response'Sep 02 2024'
+
+  
+ # gets the raw byte size of the page - who knows why, but fun anyway ;)
+  import requests
+  response = requests.get("https://google.com")
+  len(response.text)
+  
