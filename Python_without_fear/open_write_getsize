@@ -1,0 +1,16 @@
+import os
+
+def create_python_script(filename):
+    comments = "# Start of a new Python program"
+    
+    # Open the file in write mode and write comments to it
+    with open(filename, 'w') as file:
+        file.write(comments)  # Write the comment to the file
+
+    # Correct path to check the file size
+    filesize = os.path.getsize(filename)  # Get the file size after writing
+    
+    return filesize  # Return the file size
+
+# Call the function and print the result
+print(create_python_script("program.py"))
