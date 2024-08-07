@@ -1,0 +1,7 @@
+import csv
+
+f = open("personnel.csv")
+csv_f = csv.reader(f)
+for row in csv_f:
+    name, phone, role = row
+    print("Name:{}, phone: {}, role: {}".format(name,phone, role))
