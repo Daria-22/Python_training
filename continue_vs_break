@@ -1,0 +1,30 @@
+#break
+
+data = [10, -1, 3]
+result = 0
+
+while len(data) > 0:
+  item = data.pop(0)
+  if item < 0:
+    break
+  result += item
+
+#result
+#Result:
+#10
+
+#continue
+data = [10, -1, 3]
+result = 0
+
+while len(data) > 0:
+  item = data.pop(0)
+  if item < 0:
+    continue
+  result += item
+
+#result
+#Result:
+#13
+
+#break stops the iteration at all, continue skips a definitie number in the iterated seaquence, but continues to the next one - makes sense!
