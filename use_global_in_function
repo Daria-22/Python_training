@@ -1,0 +1,22 @@
+#this is global variable
+failed_attempts = 0
+
+
+def check_pin(correct_pin, provided_pin):
+  if correct_pin == provided_pin:
+    return True
+  else:
+    #to access a global variable, indicate to the function that falied_attempts is global:
+    global failed_attempts
+    failed_attempts +=1
+    return False
+
+check_1 = check_pin("1234", "5678")
+check_2 = check_pin("9000", "9000")
+check_3 = check_pin("867", "5309")
+
+[check_1, check_2, check_3, failed_attempts]
+Goal:
+[False, True, False, 2]
+Yours:
+[False, True, False, 2]
