@@ -1,0 +1,21 @@
+def count_order_items(order):
+  ordered_items = 0
+  items = order.values()
+  for value in items:
+      ordered_items += value
+  #I am so stupid!!! I forgot to user 'return'
+  return ordered_items 
+
+[
+  count_order_items({
+    "dumplings": 4,
+    "rice": 3,
+  }),
+  count_order_items({
+    "ice cream cone": 2,
+  }),
+]
+
+Expected: 7, 2
+
+  
