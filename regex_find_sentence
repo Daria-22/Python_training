@@ -1,0 +1,20 @@
+#import the module which works with regular expressinos
+import re
+
+#define the function which takes text as a parameter
+def check_sentence(text):
+  #call re module and search method with the following filter: 
+  # ^[A-Z] - find the expression starting with a capital letter
+  #[\w\s\-,]* - the continuation is any character or space repeated as many times as it happens
+  #[.!?]$ - at the end of expression should be one of these - ?, . or !
+  result = re.search(r"^[A-Z][\w\s\-,]*[.!?]$", text)
+  #if the result returns something, then result !=None is true and we found a sentence
+  #if result return nothgin, then result !=None is false
+  return result != None
+
+
+print(check_sentence("Is this is a sentence?")) # True
+print(check_sentence("is this is a sentence?")) # False
+print(check_sentence("Hello")) # False
+print(check_sentence("1-2-3-GO!")) # False
+print(check_sentence("A star is born.")) # True
