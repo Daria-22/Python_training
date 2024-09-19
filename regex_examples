@@ -1,0 +1,18 @@
+#\d - any digit 
+# - - hyphen
+#{} - three of what was mentioned before - three digits
+r”\d{3}-\d{3}-\d{4}
+
+#at the beginning hyphen and any digit as amnytimes as it comes
+#-?: The hyphen - matches a minus sign, and the question mark ? means "zero or one occurrence" (i.e., the number can optionally be negative).
+#\d*  Matches zero or more digits (i.e., the integer part of the number, which can be empty, such as for .5).
+\.: Escapes the period (.), which is treated as a literal decimal point.
+\d+: Matches one or more digits (i.e., the fractional part after the decimal point).
+The parentheses () group these components together.
+The question mark ? after the group means that the decimal and the digits after it are optional (i.e., the number could be an integer or a decimal).
+$: Asserts the end of the string (ensures that the match ends at the end of the input).
+r”^-?\d*(\.\d+)?$” 
+
+#This line of code matches any path and filename.
+
+r”^(.+)\/([^\/]+)\/” 
