@@ -1,0 +1,25 @@
+'''this code checks if the string is a top-level web-site which can contain alphanumeric symbols, 
+spaces, pluses, dashes and is followed by period with letter symbols of any register'''
+
+import re
+def check_web_address(text):
+  #A-Za-z letters capital and lowercase 
+  #0-9numbers
+  #_space
+  #\. period, important to use with a slash, otherwise it is any character
+  #\- dash
+  #\+ plus
+  pattern = r"^[a-zA-Z0-9_\.\-\+]*[\.a-zA-Z]$"
+  result = re.search(pattern, text)
+  return result != None
+
+print(check_web_address("gmail.com")) # True
+print(check_web_address("www@google")) # False
+print(check_web_address("www.Coursera.org")) # True
+print(check_web_address("web-address.com/homepage")) # False
+print(check_web_address("My_Favorite-Blog.US")) # True
+
+#result was correct
+#solved without help of chat GPT!
+#thought for two days
+#understoodmistake - i put period and letters in two square brackets, but they  should be in ONE. clever stupid me)
