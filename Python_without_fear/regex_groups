@@ -43,3 +43,15 @@ def rearrange_name(name):
 rearrange_name("Hopper-Junior, Grace M.")
 
 '''Grace M. Hopper-Junior'''
+
+import re
+
+def rearrange_name(name):
+    result = re.search(r"^(\w+),\s*(\w+)\s*(\w\.)$", name)
+    if result is None:
+        return name
+    return "{} {} {}".format(result.group(2), result.group(3), result.group(1))
+
+
+name=rearrange_name("Kennedy, John F.")
+print(name)
