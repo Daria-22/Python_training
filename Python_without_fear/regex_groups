@@ -1,3 +1,5 @@
+#/w - letters, numbers and underscores
+
 import re
 result = re.search(r"^(\w*), (\w*)$", "Lovelace, Ada")
 print(result)
