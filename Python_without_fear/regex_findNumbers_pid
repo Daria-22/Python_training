@@ -2,8 +2,8 @@ import re
 log = "July 31 07:51:48 mycomputer bad_process[12345]: ERROR Performing package upgrade"
 regex = r"\[(\d+)\]" 
 #\d is a shorthand for any digit (0-9) 
-# for opening the bracket \[
-#for closing the bracket \]
+# for opening the bracket \[, first use \ to escape and then [ means literally [
+#for closing the bracket \], first use \ to escape and then ] means literally ]
 result = re.search(regex, log)
 print(result[1])
 #12345
