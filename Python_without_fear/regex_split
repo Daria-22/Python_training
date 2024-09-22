@@ -1,0 +1,4 @@
+import re
+result = re.split(r"the|a", "One sentence. Another one? And the last one!")
+print(result)
+#['One sentence. Ano', 'r one? And ', ' l', 'st one!']
