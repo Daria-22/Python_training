@@ -1,0 +1,19 @@
+'''
+company uses unique, 9-character codes that begin with a capital letter, followed by a hyphen (-), followed by 7 or 8 digits as employee ID numbers, in the format A-1234567 or A-12345678. 
+Project reports submitted to the company include the employee’s ID number and a summary of the work they completed on the project. 
+A data analyst wants to pull all of the employee ID numbers out of these projects. Complete the find_eid function to extract these employee ID numbers from the reports. 
+'''
+
+def find_eid(report):
+  pattern = "[A-Z]-\d{7,8}(?!\d)" #enter the regex pattern here
+  result = re.findall(pattern, report) #enter the re method  here
+  return result
+
+
+print(find_eid("Employees B-1234567 and C-12345678 worked with products X-123456 and Z-123456789")) # Should return ['B-1234567', 'C-1234567']
+print(find_eid("Employees B-1234567 and C-12345678, not employees b-1234567 and c-12345678")) #Should return ['B-1234567', 'C-1234567']
+
+
+#when I used [A-Z]-\d{7,8} it included Z-123456789: output was Z-12345678
+#when I used \b[A-Z]-\d{7,8}\b for some reason I got an empty list
+#when I used negative looahead, it started working: [A-Z]-\d{7,8}(?!\d) - returned only employees, not products. (?!\d)- mean not decimal
