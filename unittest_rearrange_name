@@ -1,0 +1,40 @@
+#file called rearrange.py
+import re
+
+
+#function to rearrange name
+def rearrange_name(name):
+    result = re.search(r"^([\w .]*), ([\w .]*)$", name)
+    return "{} {}".format(result[2], result[1])
+
+#checkign if it rearranges
+#print(rearrange_name("Daria, Kozak"))
+
+
+#in terminal:
+#python3
+#from rearrange import rearrange_name
+#rearrange_name("Lovelace, Ada")  
+
+
+#other file - rearrange_test.py
+
+import unittest
+from rearrange import rearrange_name
+
+class TestRearrangeName(unittest.TestCase):
+    def test_rearrange_name(self):
+        tested_name = "Albert, Kozak"
+        expected = "Kozak Albert"   
+        self.assertEqual(rearrange_name(tested_name), expected)
+        
+unittest.main()
+
+#in terminal:
+#navigate to the folder where the tests are (use CD <name of directory>
+# run command
+python3 -m rearrange_test.py
+
+#output:
+#Ran 1 test in 0.000s
+#OK
