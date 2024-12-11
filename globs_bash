@@ -1,0 +1,11 @@
+#all .py files
+echo *.py
+
+#all files starting with scr
+echo scr*
+
+#all files in the current directory
+echo *
+
+#names has 6 characters
+echo ??????.py
