@@ -14,3 +14,7 @@ who
 echo
 
 echo "Finishing at: $(date)" 
+
+#when running with <chmod +x gather_info.sh> for allowing execution and then <./gather_info.sh> - permission was denied
+#when running with <sudo ./gather_info.sh> and then using my password - worked WTF?
+
