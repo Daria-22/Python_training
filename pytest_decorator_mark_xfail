@@ -1,0 +1,14 @@
+def multiple_of_two(num):
+    if num == 0:
+        raise(ValueError)
+    return num % 2 == 0
+
+# Add the pytest marker decorator here
+@pytest.mark.xfail
+def test_fails():
+    # Write any assert test that will fail
+    def multiple_of_two(num): 
+        assert 8 % 2 == 1
+
+#syntax for decorating @pytest.mark.nameofmark
+# for always failing test @pytest,mark.xfail
